@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ODSC Sample</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link
+   href="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.css"
+   rel="stylesheet" type="text/css">
+<link
+   href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.css"
+   rel="stylesheet" type="text/css">
+
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.js"></script>
+  </head>
+  <body>
+      <h1 id='home'>Suggest Flies</h1>
+
+      {{test_table|safe}}
+
+     
+      <div id='plots'>
+      {{ script|safe }}
+      {{ div|safe }}
+      </div>
+      
+
+  </body>
+</html>
